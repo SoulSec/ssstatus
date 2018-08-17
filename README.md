@@ -1,0 +1,2 @@
+# ssstatus
+Lightweight server status

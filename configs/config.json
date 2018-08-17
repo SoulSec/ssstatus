@@ -1,0 +1,73 @@
+{
+    "settings": {
+        "notifications": {
+            "email": [
+                {
+                    "smtp": "smtp.gmail.com",
+                    "port": 587,
+                    "username": "....",
+                    "password": "...",
+                    "from": "....",
+                    "to": [
+                        "...."
+                    ]
+                }
+            ],
+            "telegram": [
+                {
+                    "botToken": "xnxx",
+                    "chatId": "12341234"
+                }
+            ],
+            "pushover": [
+                {
+                    "userKey": "user_key",
+                    "appToken": "app_token"
+                }
+            ],
+            "webhook": [
+                {
+                    "url": "url",
+                    "method": "GET"
+                }
+            ],
+            "sms": [
+                {
+                    "sms": "todo"
+                }
+            ]
+        },
+        "monitor": {
+            "checkInterval": 15,
+            "timeout": 5,
+            "maxConnections": 50,
+            "exponentialBackoffSeconds": 5
+        }
+    },
+    "servers": {
+        {
+            "name":"Local Webserver 1",
+            "ipAddress":"1111",
+            "port": 80,
+            "protocol": "tcp",
+            "checkInterval": 5,
+            "timeout": 5
+        },
+        {
+            "name":"Test server 1",
+            "ipAddress":"1111",
+            "port": 80,
+            "protocol": "tcp",
+            "checkInterval": 5,
+            "timeout": 5
+        },
+        {
+            "name":"Test server 2",
+            "ipAddress":"1111",
+            "port": 8080,
+            "protocol": "tcp",
+            "checkInterval": 5,
+            "timeout": 5
+        }
+    }
+}
